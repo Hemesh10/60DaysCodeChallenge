@@ -1,5 +1,9 @@
 package problems;
 
+// Kth Missing Positive Number
+// Given an array arr of positive integers sorted in a strictly increasing order, and an integer k.
+// Return the kth positive integer that is missing from this array.
+
 public class Day5Problem_KthMissingPositiveNumber {
     static int findKthPositive(int[] arr, int k) {
         if (arr[0] > k) return k;
