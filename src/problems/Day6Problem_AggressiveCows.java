@@ -9,6 +9,7 @@ package problems;
 import java.util.Arrays;
 public class Day6Problem_AggressiveCows {
     static boolean isAllocationPossible(int[] stalls, int k, int n) {
+        System.out.println(k);
         int cowsCount = 1, lastPosition = stalls[0];
         // we place the first cows at the first stall beforehand (greedy) and then place other remaining one's
         // and since the first cow has already been placed at the first stall, the cowsCount is 1 initially
@@ -28,6 +29,7 @@ public class Day6Problem_AggressiveCows {
     }
     static int aggressiveCows(int[] stalls, int k) {
         Arrays.sort(stalls);
+        System.out.println(Arrays.toString(stalls));
         // we sorted the given array in order to find the maximum and the minimum
         // possible distance between any of the two cows
         int n = stalls.length;
@@ -36,6 +38,8 @@ public class Day6Problem_AggressiveCows {
         // The maximum possible distance between any two cows will be
         // the position of last stall minus the position of the first stall
         int low = 1, high = stalls[n - 1] - stalls[0];
+//        System.out.println(low);
+//        System.out.println(high);
 
         while (low <= high) {
             int mid = low + (high - low) / 2;
