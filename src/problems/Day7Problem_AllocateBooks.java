@@ -2,12 +2,14 @@ package problems;
 
 // Allocate Books
 /*
- Given an ArrayList of integer numbers where, arr[i] represents the number of pages in the ‘i-th’ book.
+ Given an ArrayList 'arr' of integer numbers where, arr[i] represents the number of pages in the ‘i-th’ book.
  There are 'm' number of students, and the task is to allocate all the books to the students.
+
  Allocate books in such a way that:
  1. Each student gets at least one book.
  2. Each book should be allocated to only one student.
  3. Book allocation should be in a contiguous manner.
+
  You have to allocate the book to ‘m’ students such that the maximum number of pages assigned to a student
  is minimum. If the allocation of the books is not possible, return -1
 */
@@ -26,6 +28,7 @@ public class Day7Problem_AllocateBooks {
         }
         return new int[]{max, sum};
     }
+
     static int studentsAllocated(ArrayList<Integer> arr, int pages) {
         int students = 1, booksPages = 0;
         for (int k = 0 ; k < arr.size() ; k++) {
@@ -38,6 +41,7 @@ public class Day7Problem_AllocateBooks {
         }
         return students;
     }
+
     static int findPages(ArrayList<Integer> arr, int n, int m) {
         if (m > n) return -1;
         int[] highAndSummation = getMaximumAndSummation(arr);
@@ -54,6 +58,7 @@ public class Day7Problem_AllocateBooks {
 
         return low;
     }
+
     public static void main(String[] args) {
         // Test Case 1:
         ArrayList<Integer> arr = new ArrayList<>();
