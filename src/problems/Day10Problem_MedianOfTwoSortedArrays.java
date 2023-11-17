@@ -14,6 +14,7 @@ public class Day10Problem_MedianOfTwoSortedArrays {
 
 --->    Brute Force Solution
 //      int i = 0, j = 0, k = 0;
+//      int[] arr3 = new int[n3];
 //      while (i < n1 && j < n2) {
 //          if (nums1[i] <= nums2[j]) {
 //              arr3[k++] = nums1[i++];
