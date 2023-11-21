@@ -6,7 +6,7 @@ package problems;
 // the maximum count of ones, and the number of ones in that row.
 // In case there are multiple rows that have the maximum count of ones,
 // the row with the smallest row number should be selected.
-//Return an array containing the index of the row, and the number of ones in it.
+// Return an array containing the index of the row, and the number of ones in it.
 
 public class Day12Problem_RowWithMax1s {
     static int countNumberOf1s(int[] row, int m) {
