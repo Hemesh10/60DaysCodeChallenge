@@ -1,6 +1,6 @@
 package problems;
 
-public class Dat12Problem_RowWithMax1s {
+public class Day12Problem_RowWithMax1s {
     static int countNumberOf1s(int[] row, int m) {
 //        int counter = 0;
 //        for (int i = 0 ; i < m ; i++) {
