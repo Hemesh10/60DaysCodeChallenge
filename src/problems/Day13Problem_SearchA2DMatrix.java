@@ -25,7 +25,7 @@ public class Day13Problem_SearchA2DMatrix {
                 while (l2 <= h2) {
                     int m2 = (l2 + h2) / 2;
                     if (matrix[m1][m2] == target) {
-                        System.out.println("Target " + target + " is at index " + m2 + " of row " + m1);
+                        System.out.println("Given target coordinates - " + "(" + m1 + ", " + m2 + ")");
                         return true;
                     } else if (matrix[m1][m2] > target) {
                         h2 = m2 - 1;
