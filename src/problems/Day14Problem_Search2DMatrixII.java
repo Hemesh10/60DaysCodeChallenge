@@ -17,7 +17,7 @@ public class Day14Problem_Search2DMatrixII {
         while (topShift < n  && rightShift >= 0) {
             int current = matrix[topShift][rightShift];
             if (current == target) {
-                System.out.println("Target " + target + " is index " + rightShift + " of row " + topShift);
+                System.out.println("Given target is at coordinates - " + "[" + topShift + ", " + rightShift + "]");
                 return true;
             }
             else if (current > target) {
