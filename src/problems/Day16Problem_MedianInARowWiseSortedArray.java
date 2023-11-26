@@ -1,5 +1,12 @@
 package problems;
 
+// Median in a Row Wise Sorted Matrix
+/*
+   Given a row wise sorted matrix 'mat' os size m * n, where 'm' and 'n' are the numbers of rows and columns of
+   matrix respectively. Find the median of the matrix
+   NOTE - 'm' and 'n' will always be odd
+ */
+
 public class Day16Problem_MedianInARowWiseSortedArray {
     static int upperBound(int[] arr, int n, int x) {
         int low = 0, high = n - 1;
@@ -14,6 +21,7 @@ public class Day16Problem_MedianInARowWiseSortedArray {
         }
         return low;
     }
+
     static int countSmallOrEqual(int[][]mat, int n, int m, int x) {
         int counter = 0;
         for (int i = 0 ; i < n ; i++) {
@@ -21,6 +29,7 @@ public class Day16Problem_MedianInARowWiseSortedArray {
         }
         return counter;
     }
+
     static int findMedian(int[][] mat, int n, int m) {
         int low = Integer.MAX_VALUE, high = Integer.MIN_VALUE;
         for (int i = 0 ; i < n ; i++) {
