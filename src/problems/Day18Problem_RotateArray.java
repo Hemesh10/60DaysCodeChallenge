@@ -1,8 +1,8 @@
-package problems.Arrays;
+package problems;
 
 import java.util.Arrays;
 
-public class RotateArray {
+public class Day18Problem_RotateArray {
     static void reverse(int[] nums, int low, int high) {
         while (low < high) {
             int temp = nums[low];

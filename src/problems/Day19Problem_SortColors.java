@@ -1,8 +1,8 @@
-package problems.Arrays;
+package problems;
 
 import java.util.Arrays;
 
-public class SortColors {
+public class Day19Problem_SortColors {
     // used quick sort algorithm
     static void quicksort(int[] arr, int low, int high) {
         if (low < high) {
@@ -33,13 +33,15 @@ public class SortColors {
         arr[j] = temp;
     }
 
-    static void sortColors(int[] nums) {
+    static int[] sortColors(int[] nums) {
         quicksort(nums, 0, nums.length - 1);
 
-        System.out.println(Arrays.toString(nums));
+        return nums;
     }
     public static void main(String[] args) {
         int[] nums = {2, 0, 2, 1, 1, 0};
-        sortColors(nums);
+
+        int[] res = sortColors(nums);
+        System.out.println(Arrays.toString(res));
     }
 }

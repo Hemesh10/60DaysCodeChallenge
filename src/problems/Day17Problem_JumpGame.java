@@ -1,13 +1,6 @@
-package problems.Arrays;
+package problems;
 
-//  Jump Game
-/*
-    You are given an integer array nums. You are initially positioned at the array's first index,
-    and each element in the array represents your maximum jump length at that position.
-    Return true if you can reach the last index, or false otherwise.
- */
-
-public class JumpGame {
+public class Day17Problem_JumpGame {
     static boolean canJump(int[] nums) {
         int n = nums.length;
 
@@ -15,7 +8,6 @@ public class JumpGame {
         if (nums[0] == 0) return false; // as we cant jump at all
 
         int target = n - 1;
-        System.out.println(target);
 
         // checking we can directly jump to the last index from the starting position
         // if yes, return true
@@ -33,6 +25,7 @@ public class JumpGame {
 
         return target == 0; // if the target is at 0th index, it will return true of false otherwise
     }
+
     public static void main(String[] args) {
         // Input Case 01:
         int[] nums = {3, 0, 8, 2, 0, 0, 1};
