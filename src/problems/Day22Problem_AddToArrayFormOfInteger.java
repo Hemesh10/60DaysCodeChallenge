@@ -40,8 +40,6 @@ public class Day22Problem_AddToArrayFormOfInteger {
             res.add(num[j]);
         }
 
-//        res = res.reversed();
-
         int low = 0, high = res.size() - 1;
         while (low < high) {
             int temp = res.get(low);

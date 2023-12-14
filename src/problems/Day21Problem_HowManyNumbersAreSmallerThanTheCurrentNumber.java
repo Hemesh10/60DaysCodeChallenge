@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Day21Problem_HowManyNumbersAreSmallerThanTheCurrentNumber {
     static int[] smallerNumbersThanCurrent(int[] nums) {
-        int[] frequency = new int[101];
+        int[] frequency = new int[101]; // since 0 <= nums[i] <= 100
         for (int i = 0 ; i < nums.length ; i++) {
             frequency[nums[i]]++;
         }
